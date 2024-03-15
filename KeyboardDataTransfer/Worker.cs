@@ -25,19 +25,19 @@ namespace KeyboardDataTransfer
             var dContext = scope.ServiceProvider.GetRequiredKeyedService<DestinationKeyboardContext>(null);
             var dUserManager = scope.ServiceProvider.GetRequiredKeyedService<UserManager<Entities.Models.ApplicationUser>>(null);
 
-            // ConvertAiLandingFaqs(sContext, dContext);
-            // ConvertAppSettings(sContext, dContext);
-            // ConvertTicketSubjects(sContext, dContext);
-            // ConvertContactUsMessages(sContext, dContext);
-            // ConvertDiscountCodes(sContext, dContext);
-            // ConvertFaqs(sContext, dContext);
-            // ConvertMobileVerificationCodes(sContext, dContext);
-            // ConvertNews(sContext, dContext);
-            // ConvertProfessors(sContext, dContext);
-            // ConvertSlides(sContext, dContext);
-            // ConvertStudentPayments(sContext, dContext);
-            // ConvertSupportedPhoneNumbers(sContext, dContext);
-            // ConvertValidatedPhoneTokens(sContext, dContext);
+            ConvertAiLandingFaqs(sContext, dContext);
+            ConvertAppSettings(sContext, dContext);
+            ConvertTicketSubjects(sContext, dContext);
+            ConvertContactUsMessages(sContext, dContext);
+            ConvertDiscountCodes(sContext, dContext);
+            ConvertFaqs(sContext, dContext);
+            ConvertMobileVerificationCodes(sContext, dContext);
+            ConvertNews(sContext, dContext);
+            ConvertProfessors(sContext, dContext);
+            ConvertSlides(sContext, dContext);
+            ConvertStudentPayments(sContext, dContext);
+            ConvertSupportedPhoneNumbers(sContext, dContext);
+            ConvertValidatedPhoneTokens(sContext, dContext);
             ConvertRegisteredStudents(sContext, dContext, dUserManager);
 
 
